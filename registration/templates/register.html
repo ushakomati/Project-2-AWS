@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+  	      background-image: linear-gradient(to right, #ECF9FF, #F8CBA6);
+  	      font-family: 'Open Sans', sans-serif;
+          text-align: center;
+	    }
+
+     .container {
+	         width: 60%;
+	         margin: 50px auto;
+	         text-align: center;
+	         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	         border-radius: 10px;
+	           overflow: hidden;
+	         background-color: white;
+	    }
+
+
+      h1 {
+      	font-size: 36px;
+      	margin-bottom: 20px;
+      	color: black;
+	    }
+    
+      input[type="text"], input[type="email"], input[type="password"], input[type="first_name"], input[type="username"],
+            input[type="last_name"] {
+ 	      width: 30%;
+      	padding: 6px 6px;
+      	margin: 4px 0;
+      	box-sizing: border-box;
+      	border: 2px solid #3f87a6;
+      	border-radius: 4px;
+      	font-size: 15px;
+      	outline: none;
+      	transition: all 0.3s ease-in-out;
+	    }
+    
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="first_name"] :focus,
+        input[type="username"]:focus,input[type="last_name"]:focus {
+      	border-color: #20262E;
+	    }
+         
+    
+        input[type="submit"] {
+      	width: 50%;
+      	padding: 10px 15px;
+      	background-color: #AA5656;
+      	color: white;
+      	border: none;
+      	border-radius: 4px;
+      	cursor: pointer;
+      	font-size: 16px;
+      	transition: all 0.3s ease-in-out;
+	    }
+       input[type="file"] {
+        width: 20%;
+        padding: 10px 15px;
+        background-color: #3C84AB;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        }
+      input[type="file"]:hover {
+        background-color: #698269;
+        color: white;
+        }
+      
+      input[type="submit"]:hover {
+      	background-color: #698269;
+        font-size: 16px;
+      	color: white;
+	    } 
+
+    </style>
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <h1>Registration Page</h1>
+    <form action= "/register" method="post" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required>
+      <br><br>
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label type for="file">Upload the file :</label>
+      <input type = "file" id= "file" name= "file" required>
+      <br/>
+      <br> <br>      
+      <input type="submit" value="Submit">
+    </form> 
+  </body>
+</html>
+
