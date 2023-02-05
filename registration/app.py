@@ -7,8 +7,8 @@ app = Flask(__name__)
 boto3.setup_default_session(region_name='us-east-2')
 
 session = boto3.Session(
-    aws_access_key_id='AKIA6FW4ZVP4FIIHFIDB',
-    aws_secret_access_key='G16Xr+E6mM/SOKsL9fvROa11/5ia/qYLkhiMPoYK',
+    aws_access_key_id='YOUR_ACCESS_ID',
+    aws_secret_access_key='YOUR_SECRET_ID',
     region_name='us-east-2'
 
 )
